@@ -35,3 +35,24 @@ console.log(myObj,typeof myObj);
 console.log(myFunction,typeof myFunction);
 
 // JavaScript is a dynamically typed language i.e the type of the variable is decide in run time
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Stack (primitive data type use this type of memory), Heap (non primitive data type use this type of memory)
+// Stack means we get a copy of the variable
+// Heap means we get the reference of the variable means if we change it then original value will get changed
+
+let myYoutubeName= "hiteshchoudharydotcom"
+let anotherName= myYoutubeName
+anotherName="chaiaurcode"
+console.table([myYoutubeName, anotherName])
+
+let userOne={
+    emailId:"user@google.com",
+    upi:"user@ybl"
+}
+
+let userTwo= userOne
+userTwo.emailId="hitesh@google.com"
+console.table([userOne,userTwo])
+console.table([userOne.emailId,userTwo.emailId])
+
