@@ -42,4 +42,43 @@ function logInUserMessage(username ="sam"){ // here we passed default value so t
     return (`${username} just logged in`)
 }
 
-console.log(logInUserMessage("Hitesh"))  // if we do't pass anything then in function value will be undefined
+// console.log(logInUserMessage("Hitesh"))  // if we do't pass anything then in function value will be undefined
+
+
+// function calculatePrice(...num){ // here ... is called rest operator not spread operatior
+//         return num
+// }
+
+// console.log(calculatePrice(100,200,300)); // o/p => [ 100, 200, 300 ]
+
+function calculatePrice(val1,val2,...num){ // here ... is called rest operator not spread operatior
+    return num
+}
+
+console.log(calculatePrice(100,200,300,2000)); // o/p => [ 300, 2000 ]
+
+const user={
+    username:"hitesh",
+    price:199
+}
+
+function handleObject(anyObject){
+    console.log(`User Name is ${anyObject.username} and Price is ${anyObject.price}`);
+}
+
+// handleObject(user)
+handleObject({
+    username:"sam",
+    price: 399
+})
+
+
+const myNewArray = [100,200,300,400]
+
+function returnSecondValue(getArray){
+        return getArray[1]
+}
+
+// const val=returnSecondValue(myNewArray)
+const val=returnSecondValue([100,200,300,400])
+console.log(val);
