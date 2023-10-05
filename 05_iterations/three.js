@@ -15,7 +15,22 @@ for(const greet of greetings){
     if(greet==" "){
         continue;
     }
-    console.log(`Each char is : ${greet}`);
+    // console.log(`Each char is : ${greet}`);
 }
 
 // Maps
+
+const myMap = new Map()
+myMap.set("IN","India")
+myMap.set("USA","United State of America")
+myMap.set("FR","France")
+myMap.set("BR","Brazil")
+
+
+console.log(myMap.get("IN"))
+
+for(const i of myMap){
+    console.log(i);
+}
+
+console.log("Map is : ", myMap);
