@@ -1,3 +1,6 @@
+
+
+
 // for of loop
 // ["","",""]
 // [{},{},{}]
@@ -27,10 +30,27 @@ myMap.set("FR","France")
 myMap.set("BR","Brazil")
 
 
-console.log(myMap.get("IN"))
+// console.log(myMap.get("IN"))
 
 for(const i of myMap){
-    console.log(i);
+    // console.log(i);
 }
 
-console.log("Map is : ", myMap);
+// console.log("Map is : ", myMap);
+
+for( const [key,value] of myMap){  // we can destructure the array using [key ,value] syntax
+    // console.log(key);
+    // console.log(key, ":- " , value);
+}
+
+const myObject = {
+    "game1" : "NFS",
+    "game2" : "Spiderman"
+}
+
+
+// The below syntax will not work
+// for( const [key , value] of myObject){
+//     console.log(key , ":- ", value);
+// }
+
