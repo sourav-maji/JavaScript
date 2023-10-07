@@ -21,3 +21,15 @@ for (const key in myObject) {
 
     }
 
+    // Maps
+//  As Map is not iteratable hence we can't use for in loop
+// const myMap = new Map()
+// myMap.set("IN","India")
+// myMap.set("USA","United State of America")
+// myMap.set("FR","France")
+// myMap.set("BR","Brazil")
+
+// for (const key in myMap ){
+//     console.log(key);
+// }
+
