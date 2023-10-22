@@ -15,7 +15,11 @@ class User{
 
 // getter and setter for email
     get email(){
-        return `${this.email}`
+        return `${this._email.toUpperCase()}`
+    }
+
+    set email(value){
+        this._email = value;
     }
 
 }
@@ -23,3 +27,4 @@ class User{
 const hitesh = new User("hitesh@hitesh.ai", "123abc")
 
 console.log(hitesh.password);
+console.log(hitesh.email);
